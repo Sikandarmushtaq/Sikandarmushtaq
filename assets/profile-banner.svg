@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="70" y1="12" x2="1110" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#11101A"/>
+      <stop offset=".52" stop-color="#11121D"/>
+      <stop offset="1" stop-color="#171020"/>
+    </linearGradient>
+    <linearGradient id="spectrum" x1="690" y1="40" x2="1120" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0ABFC"/>
+      <stop offset=".26" stop-color="#A78BFA"/>
+      <stop offset=".51" stop-color="#60A5FA"/>
+      <stop offset=".73" stop-color="#67E8F9"/>
+      <stop offset=".88" stop-color="#6EE7B7"/>
+      <stop offset="1" stop-color="#FDBA74"/>
+    </linearGradient>
+    <linearGradient id="sphere" x1="820" y1="72" x2="1046" y2="309" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5D0FE" stop-opacity=".88"/>
+      <stop offset=".22" stop-color="#A78BFA" stop-opacity=".76"/>
+      <stop offset=".5" stop-color="#60A5FA" stop-opacity=".62"/>
+      <stop offset=".76" stop-color="#67E8F9" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#F0ABFC" stop-opacity=".72"/>
+    </linearGradient>
+    <radialGradient id="sphereLight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(865 112) rotate(54) scale(225)">
+      <stop stop-color="#FFFFFF" stop-opacity=".8"/>
+      <stop offset=".22" stop-color="#E9D5FF" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ambient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(957 185) rotate(90) scale(190)">
+      <stop stop-color="#8B5CF6" stop-opacity=".23"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="650" y="-30" width="600" height="460" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="27"/>
+    </filter>
+    <clipPath id="sphereClip">
+      <circle cx="930" cy="190" r="112"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="390" rx="26" fill="url(#bg)"/>
+  <circle cx="957" cy="185" r="190" fill="url(#ambient)"/>
+
+  <!-- Soft iridescent light behind the dimensional object -->
+  <g filter="url(#softGlow)" opacity=".55">
+    <path d="M725 314C792 70 933 37 1127 98" stroke="url(#spectrum)" stroke-width="56" stroke-linecap="round"/>
+    <path d="M793 360C910 226 1042 211 1183 35" stroke="url(#spectrum)" stroke-width="36" stroke-linecap="round"/>
+  </g>
+
+  <!-- Glass-like 3D sphere -->
+  <circle cx="930" cy="190" r="112" fill="#171528" fill-opacity=".7" stroke="url(#spectrum)" stroke-width="2"/>
+  <circle cx="930" cy="190" r="110" fill="url(#sphereLight)"/>
+  <g clip-path="url(#sphereClip)" opacity=".65">
+    <ellipse cx="930" cy="190" rx="48" ry="112" stroke="url(#spectrum)" stroke-width="1.5"/>
+    <ellipse cx="930" cy="190" rx="82" ry="112" stroke="url(#spectrum)" stroke-width="1" opacity=".8"/>
+    <ellipse cx="930" cy="190" rx="112" ry="36" stroke="url(#spectrum)" stroke-width="1.2"/>
+    <ellipse cx="930" cy="190" rx="112" ry="73" stroke="url(#spectrum)" stroke-width="1" opacity=".75"/>
+    <path d="M808 168C856 135 1002 132 1052 169" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="1.2"/>
+    <path d="M820 228C883 258 987 257 1040 222" stroke="#FFFFFF" stroke-opacity=".24" stroke-width="1.2"/>
+  </g>
+  <circle cx="930" cy="190" r="112" stroke="#FFFFFF" stroke-opacity=".25" stroke-width="1"/>
+
+  <!-- Orbital rings create depth without a flat rainbow stripe -->
+  <ellipse cx="930" cy="190" rx="172" ry="53" transform="rotate(-27 930 190)" stroke="url(#spectrum)" stroke-width="2" stroke-opacity=".8"/>
+  <ellipse cx="930" cy="190" rx="190" ry="69" transform="rotate(26 930 190)" stroke="url(#spectrum)" stroke-width="1" stroke-opacity=".48"/>
+  <circle cx="1087" cy="113" r="5" fill="#F0ABFC"/>
+  <circle cx="785" cy="266" r="4" fill="#67E8F9"/>
+  <circle cx="1000" cy="34" r="3" fill="#A78BFA"/>
+
+  <!-- Editorial typography -->
+  <text x="78" y="90" fill="#C4B5FD" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" letter-spacing="4.5">CERTIFIED FULL STACK ENGINEER</text>
+  <text x="74" y="165" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="57" font-weight="700" letter-spacing="-2.2">SIKANDAR</text>
+  <text x="74" y="224" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="57" font-weight="700" letter-spacing="-2.2">MUSHTAQ<span fill="#C4B5FD">.</span></text>
+  <text x="79" y="269" fill="#C5C1D0" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="1.4">FULL STACK  /  PYTHON  /  THREE.JS</text>
+  <text x="79" y="327" fill="#8F899F" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="500" letter-spacing="2.8">SAAS  ·  E-COMMERCE  ·  BUSINESS  ·  3D WEB</text>
+  <path d="M79 347H480" stroke="url(#spectrum)" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+</svg>
