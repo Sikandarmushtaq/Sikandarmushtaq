@@ -81,11 +81,6 @@ A professional business website presenting digital services and business solutio
 
 [Visit SyncSolvo](https://www.syncsolvo.com)
 
-### 05 — 3D Developer Portfolio
-**Interactive 3D Web Experience**
-
-A creative developer portfolio exploring immersive 3D elements, animation and modern frontend technologies.
-
 **Core technologies:** React, Three.js, React Three Fiber, GSAP and Lenis.
 
 <p align="center">
